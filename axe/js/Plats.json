@@ -1,0 +1,67 @@
+
+[
+    {
+      "nom": "Tajine de poulet au citron",
+      "description": "Poulet tendre mijoté avec des citrons confits, olives vertes et épices marocaines.",
+      "prix": 9.50,
+      "image": "../src/img/meal1.png",
+      "type": "plat"
+    },
+    {
+      "nom": "Couscous royal",
+      "description": "Semoule de blé tendre servie avec agneau, merguez, poulet et légumes de saison.",
+      "prix": 12.00,
+      "image": "src/img/meal2.png",
+      "type": "plat"
+    },
+    {
+      "nom": "Pastilla au poulet et amandes",
+      "description": "Feuilleté sucré-salé garni de poulet effiloché, amandes grillées et cannelle.",
+      "prix": 8.50,
+      "image": "src/img/meal3.png",
+      "type": "Entrées"
+    },
+    {
+      "nom": "Brochettes de bœuf grillées",
+      "description": "Morceaux de bœuf marinés aux herbes, grillés à la perfection et servis avec frites maison.",
+      "prix": 10.00,
+      "image": "src/img/meal4.png",
+      "type": "Entrées"
+    },
+    {
+      "nom": "Salade marocaine",
+      "description": "Tomates, concombres, oignons et poivrons assaisonnés à l’huile d’olive et citron.",
+      "prix": 5.00,
+      "image": "src/img/meal5.png",
+      "type": "Desserts"
+    },
+    {
+      "nom": "Thé à la menthe",
+      "description": "Thé vert marocain infusé avec de la menthe fraîche et du sucre.",
+      "prix": 2.50,
+      "image": "src/img/meal6.png",
+      "type": "Desserts"
+    },
+    {
+      "nom": "Dessert oriental",
+      "description": "Assortiment de pâtisseries marocaines : cornes de gazelle, chebakia et briouates au miel.",
+      "prix": 4.00,
+      "image": "src/img/meal7.png",
+      "type": "Desserts"
+    },
+     {
+      "nom": "CoCa",
+      "description": "Boisson gazeuse sucrée et rafraîchissante.",
+      "prix": 2.00,
+      "image": "src/img/coke.png",
+      "type": "Boissons"
+    },
+     {
+      "nom": "jus d'orange",
+      "description": "Boisson fraîche et vitaminée.",
+      "prix": 3.00,
+      "image": "src/img/drink.png",
+      "type": "Boissons"
+    }
+  ]
+
