@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Amina</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link
   rel="stylesheet"
@@ -12,16 +13,15 @@
   <!-- <link href="/src/output.css" rel="stylesheet"> -->
 </head>
 <body>
-    <div class="min-h-screen mx-auto w-full bg-[url(/src/img/banner-bg.png)] bg-cover bg-center px-28 py-4">
+    <div class="min-h-screen mx-auto w-full bg-[url(/src/img/bgg.png)] bg-cover bg-center px-28 py-4">
     <nav class="flex">
-    <img src="src/img/logo.png" alt="logo" class="w-40 h-15 cursor-pointer">
+    <!-- <img src="src/img/logo.png" alt="logo" class="w-40 h-15 cursor-pointer"> -->
+     <p class="text-5xl text-white font-bold mb-3 leading-15">AMINA</p>
       <ul class="flex-1 text-center">
     <li class="inline-block mx-3 my-6 list-none"><a href="#Accueil" class="text-amber-600">Accueil</a></li>
     <li class="inline-block mx-3 my-6 list-none"><a href="#Menu" class="text-white">Menu</a></li>
     <li class="inline-block mx-3 my-6 list-none"><a href="#" class="text-white">A propos</a></li>
-    <li class="inline-block mx-3 my-6 list-none"><a href="#" class="text-white">Populaires</a></li>
     <li class="inline-block mx-3 my-6 list-none"><a href="#Galerie" class="text-white">Galerie</a></li>
-    <li class="inline-block mx-3 my-6 list-none"><a href="#" class="text-white">Order</a></li>
   </ul>
   <a href="#" class="my-4 rounded-full px-10 py-3 bg-amber-600 text-white">Contact</a>
  </nav>
@@ -29,8 +29,8 @@
     <div class="flex items-start h-screen max-w-lg">
    <div class="py-25">
      <p class="text-lg text-white mb-4">N°1 de la restauration africaine</p>
-    <h1 class="text-5xl text-white font-bold mb-3 leading-15">Welcome to Our Restaurant</h1>
-    <p class="text-lg text-white mb-8">Experience the best dining with us</p>
+    <h1 class="text-5xl text-white font-bold mb-3 leading-15">Bienvenue au restaurant Amina</h1>
+    <p class="text-lg text-white mb-8">La cuisine africaine dans toute sa splendeur</p>
     <a href="#" class="bg-amber-600 text-white px-6 py-3 mr-4 rounded-full border-2 border-amber-600 hover:bg-transparent transition duration-300">Commander maintenant</a>
     <a href="#" class="bg-white text-black px-6 py-3 mt-4 rounded-full border-2 border-white">Explorer le menu</a>
    </div>
@@ -39,7 +39,8 @@
  </div>
  <section id="Menu">
   <div class="max-w-5xl mx-auto px-4 py-10 min-h-screen">
-    <h1 class="text-3xl text-center py-6">Découvrez notre <span class="text-amber-600">Menu</span></h1>
+    <h1 class="text-7xl text-center py-6 font-bold"><span class="text-amber-600">Menu</span></h1>
+    <h2 class="text-xl text-center py-2"><span class="text-black">Découvrez notre sélection de plats africains emblématiques, cuisinés avec passion et servis avec le sourire.</span></h2>
     <div class="flex">
       <button class="btn-tout basis-sm bg-amber-600 text-white hover:bg-fuchsia-500 rounded-3xl p-3 m-3">Voir Tout</button>
       <button class="btn-entrees basis-sm bg-amber-600 text-white hover:bg-fuchsia-500 rounded-3xl p-3 m-3">Entrées</button>
@@ -60,100 +61,20 @@
   <div class="text-justify">
     <h2 class="text-4xl font-bold text-amber-600 py-4">A propos</h2>
     <p class="text-base mb-4">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe numquam libero quidem pariatur quae, dolorum aspernatur mollitia distinctio? Iure quae quam unde laborum, quis illo eligendi molestiae error aspernatur dolores.
+     Le restaurant Amina est né d’une idée simple : rassembler les saveurs d’Afrique autour d’une même table
     </p>
     <p class="text-base mb-4">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe numquam libero quidem pariatur quae, dolorum aspernatur mollitia distinctio? Iure quae quam unde laborum, quis illo eligendi molestiae error aspernatur dolores.
+      Inspirée par les traditions culinaires transmises de génération en génération, notre équipe revisite les grands classiques du continent avec des ingrédients frais et locaux.
+    </p>
+    <p class="text-base mb-4">
+      Notre objectif ? Offrir une expérience culinaire qui réchauffe le cœur autant que le palais.
+Chez Amina, on mange bien, on rit, on partage et on célèbre la vie.
     </p>
     <div class="py-6">
       <a href="#" class="bg-amber-600 text-white px-6 py-3 rounded-full border-2 border-amber-600 hover:bg-transparent transition duration-300 hover:text-amber-700">En savoir plus</a>
     </div>
   </div>
  </div>
- </section>
- <section class="max-w-5xl mx-auto px-4 py-10 min-h-screen">
-<h1 class="text-3xl text-center py-6">Nos plat les plus <span class="text-amber-600">populaires</span></h1>
-<div  class="grid grid-cols-3 gap-4 text-center">
-  <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm ">
-    <img src="src/img/meal1.png" alt="Plat 1" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-bold mt-2">Plat 1</h2>
-    <div class="text-amber-400">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="text-gray-600">Description du plat 1.</p>
-    <p class="text-amber-600 font-bold mt-2">$10.00</p>
-  </div>
-  <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
-    <img src="src/img/meal2.png" alt="Plat 2" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-bold mt-2">Plat 2</h2>
-       <div class="text-amber-400">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="text-gray-600">Description du plat 2.</p>
-    <p class="text-amber-600 font-bold mt-2">$12.00</p>
-  </div>
-  <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
-    <img src="src/img/meal3.png" alt="Plat 3" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-bold mt-2">Plat 3</h2>
-       <div class="text-amber-400">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="text-gray-600">Description du plat 3.</p>
-    <p class="text-amber-600 font-bold mt-2">$15.00</p>
-  </div>
-   <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm ">
-    <img src="src/img/meal4.png" alt="Plat 1" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-bold mt-2">Plat 4</h2>
-    <div class="text-amber-400">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="text-gray-600">Description du plat 4.</p>
-    <p class="text-amber-600 font-bold mt-2">$10.00</p>
-  </div>
-  <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
-    <img src="src/img/meal5.png" alt="Plat 2" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-bold mt-2">Plat 5</h2>
-       <div class="text-amber-400">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="text-gray-600">Description du plat 5.</p>
-    <p class="text-amber-600 font-bold mt-2">$12.00</p>
-  </div>
-  <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
-    <img src="src/img/meal6.png" alt="Plat 3" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-bold mt-2">Plat 5</h2>
-       <div class="text-amber-400">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="text-gray-600">Description du plat 6.</p>
-    <p class="text-amber-600 font-bold mt-2">$15.00</p>
-  </div>
-
-</div>
  </section>
  <section class="max-w-5xl mx-auto px-4 py-10 min-h-screen " >
   <h1 class="text-3xl text-center py-6"><span class="text-amber-600">Gallery</span> de nos plat</h1>
@@ -205,6 +126,20 @@
 
     </div>
  </section>
+ <footer>
+  <div class="bg-gray-800 text-white py-6">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.png" alt="logo" class="w-40 h-15 cursor-pointer">
+        </div>
+        <div>
+          <p>&copy;2025 Restaurant Amina – L’Afrique dans votre assiette.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </footer>
  <script type="module" src="axe/js/script.js"></script>
 </body>
 </html>
