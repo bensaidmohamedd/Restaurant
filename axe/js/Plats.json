@@ -4,49 +4,49 @@
       "nom": "Tajine de poulet au citron",
       "description": "Poulet tendre mijoté avec des citrons confits, olives vertes et épices marocaines.",
       "prix": 9.50,
-      "image": "../src/img/meal1.png",
+      "image": "../src/img/menu/tajine.jpeg",
       "type": "plat"
     },
         {
       "nom": "Poulet Yassa",
       "description": "Poulet mariné au citron et aux oignons caramélisés (Sénégal)",
       "prix": 9.50,
-      "image": "../src/img/meal1.png",
+      "image": "../src/img/menu/PouletYassa.jpeg",
       "type": "plat"
     },
         {
       "nom": "Riz Jollof",
       "description": "Riz épicé à la tomate, accompagné de poulet grillé (Nigéria)",
       "prix": 9.50,
-      "image": "../src/img/meal1.png",
+      "image": "../src/img/menu/riz.jpeg",
       "type": "plat"
     },
     {
       "nom": "Couscous royal",
       "description": "Semoule de blé tendre servie avec agneau, merguez, poulet et légumes de saison.",
       "prix": 12.00,
-      "image": "src/img/meal2.png",
+      "image": "../src/img/menu/couscous.jpeg",
       "type": "plat"
     },
     {
       "nom": "Allocos au poulet",
       "description": "Bananes plantains frites servies avec morceaux de poulet épicés.",
       "prix": 8.50,
-      "image": "src/img/meal3.png",
+      "image": "../src/img/menu/alloco.jpeg",
       "type": "Entrées"
     },
     {
       "nom": "Brochettes de bœuf grillées",
       "description": "Morceaux de bœuf marinés aux herbes, grillés à la perfection et servis avec frites maison.",
       "prix": 10.00,
-      "image": "src/img/meal4.png",
+      "image": "../src/img/menu/beuf.jpeg",
       "type": "Entrées"
     },
      {
       "nom": "Brochettes de poulet épicées",
       "description": "Morceaux de poulet marinés aux épices, grillés et servis avec une sauce piquante.",
       "prix": 10.00,
-      "image": "src/img/meal4.png",
+      "image": "../src/img/menu/poulet.jpeg",
       "type": "Entrées"
     },
 
@@ -54,56 +54,35 @@
       "nom": "Salade marocaine",
       "description": "Tomates, concombres, oignons et poivrons assaisonnés à l’huile d’olive et citron.",
       "prix": 5.00,
-      "image": "src/img/meal5.png",
+      "image": "../src/img/menu/salad.jpeg",
       "type": "Desserts"
     },
     {
       "nom": "Salade de fruits tropicaux",
       "description": "Mangue, papaye, ananas, menthe fraîche et une touche de citron vert.",
       "prix": 2.50,
-      "image": "src/img/meal6.png",
+      "image": "../src/img/menu/fruits.jpeg",
       "type": "Desserts"
     },
      {
       "nom": "Soda",
       "description": "Boisson gazeuse sucrée.",
       "prix": 2.00,
-      "image": "src/img/coke.png",
+      "image": "../src/img/menu/soda.jpeg",
       "type": "Boissons"
     },
      {
       "nom": "jus d'orange",
       "description": "Boisson fraîche et vitaminée.",
       "prix": 3.00,
-      "image": "src/img/drink.png",
+      "image": "../src/img/menu/orange.jpeg",
       "type": "Boissons"
     },
      {
       "nom": "Jus de bissap",
       "description": "Hibiscus rouge rafraîchissant et légèrement sucré.",
       "prix": 3.00,
-      "image": "src/img/drink.png",
-      "type": "Boissons"
-    },
-     {
-      "nom": "Jus de gingembre",
-      "description": "Fort et vivifiant.",
-      "prix": 3.00,
-      "image": "src/img/drink.png",
-      "type": "Boissons"
-    },
-     {
-      "nom": "Thé africain aux épices",
-      "description": "Cannelle, menthe, girofle et citron.",
-      "prix": 3.00,
-      "image": "src/img/drink.png",
-      "type": "Boissons"
-    },
-     {
-      "nom": "Cocktail Amina",
-      "description": "Mélange exotique de fruits sans alcool.",
-      "prix": 3.00,
-      "image": "src/img/drink.png",
+      "image": "../src/img/menu/bissap.jpeg",
       "type": "Boissons"
     }
   ]
