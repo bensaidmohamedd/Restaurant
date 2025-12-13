@@ -21,7 +21,6 @@
 // }      
 const reponse = await fetch("../axe/js/Plats.json");
 const plats = await reponse.json();     
-console.log(plats);
 
 function afficherPlats(plats) {
 // Récupérer les plats depuis le fichier JSON
