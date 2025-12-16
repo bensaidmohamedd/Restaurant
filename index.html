@@ -16,19 +16,20 @@
     <div
       class="min-h-screen mx-auto w-full bg-[url(/src/img/bgg.png)] bg-cover bg-center px-6 py-4"
     >
-      <nav class="relative bg-gray-800">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <nav>
+        <div
+          class="bg-red-500 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 rounded-lg"
+        >
           <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
               <!-- Mobile menu button-->
               <button
                 type="button"
-                command="--toggle"
-                commandfor="mobile-menu"
-                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
+                id="menu-btn"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/5 hover:text-white"
               >
                 <span class="absolute -inset-0.5"></span>
-                <span class="sr-only">Open main menu</span>
+                <span class="sr-only">Ouvrire le menu</span>
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -62,14 +63,12 @@
               </button>
             </div>
             <div
-              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between"
             >
               <div class="flex shrink-0 items-center">
-                <img
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  alt="Your Company"
-                  class="h-8 w-auto"
-                />
+                <p>
+                  <span class="text-3xl text-white font-bold">AMINA</span>
+                </p>
               </div>
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
@@ -77,7 +76,7 @@
                   <a
                     href="#accueil"
                     aria-current="page"
-                    class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                    class="rounded-md bg-amber-600 px-3 py-2 text-sm font-medium text-white"
                     >Accueil</a
                   >
                   <a
@@ -95,19 +94,24 @@
                     class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
                     >Galerie</a
                   >
+                  <a
+                    href="#contact"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                    >contact</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+        <div id="mobile-menu" class="block sm:hidden">
           <div class="space-y-1 px-2 pt-2 pb-3">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
             <a
               href="#accueil"
               aria-current="page"
-              class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+              class="block rounded-md bg-amber-600 px-3 py-2 text-base font-medium text-white"
               >Accueil</a
             >
             <a
@@ -126,7 +130,7 @@
               >Galerie</a
             >
           </div>
-        </el-disclosure>
+        </div>
       </nav>
 
       <section class="mx-auto px-4 py-30 min-h-screen" id="Accueil">
@@ -366,3 +370,4 @@
     <script type="module" src="axe/js/script.js"></script>
   </body>
 </html>
+relative
