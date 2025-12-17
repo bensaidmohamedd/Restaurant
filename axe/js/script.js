@@ -31,7 +31,7 @@ function afficherPlats(plats) {
     menu.insertAdjacentHTML(
       "beforeend",
       `
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-amber-50 rounded-lg shadow-lg p-4 inset-shadow-sm">
           <img src="${plat.image}" alt="${plat.nom}" class="aspect-2/2  rounded-t-lg">
           <h2 class="text-xl font-bold mt-2">${plat.nom}</h2>
           <div class="text-amber-400">

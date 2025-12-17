@@ -2,6 +2,13 @@
 
 body {
   background-color: #ffe5cc;
+  font-family: 'Arial', sans-serif;
+}
+
+.hovercommun:hover {
+  background-color: #c17575;
+  color: var(--color-red-950);
+  cursor: pointer;
 }
 
 .common-carousel .swiper-button-next::after,
@@ -19,8 +26,6 @@ body {
   height: 48px;
 
   border-radius: 12px;
-  background-color: #0b1220; 
-  color: #fff;
 
   display: flex;
   align-items: center;
@@ -31,7 +36,7 @@ body {
 
 .common-carousel .swiper-button-next:hover,
 .common-carousel .swiper-button-prev:hover {
-  background-color: #3758f9;
+  background-color: #c17575;
 }
 
 .common-carousel .swiper-button-next svg,
