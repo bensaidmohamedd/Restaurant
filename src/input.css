@@ -1,2 +1,42 @@
 @import "tailwindcss";
 
+body {
+  background-color: #ffe5cc;
+}
+
+.common-carousel .swiper-button-next::after,
+.common-carousel .swiper-button-prev::after {
+  display: none;
+}
+
+.common-carousel .swiper-button-next,
+.common-carousel .swiper-button-prev {
+  position: relative; 
+  inset: auto;
+  margin: 30px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+  background-color: #0b1220; 
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.common-carousel .swiper-button-next:hover,
+.common-carousel .swiper-button-prev:hover {
+  background-color: #3758f9;
+}
+
+.common-carousel .swiper-button-next svg,
+.common-carousel .swiper-button-prev svg {
+  width: 22px;
+  height: 22px;
+}
+

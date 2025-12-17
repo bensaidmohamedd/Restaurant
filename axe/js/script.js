@@ -5,30 +5,32 @@
 //     // Image
 //     const imgPlat = document.getElementById("imgPlat");
 //     imgPlat.src = plat.image;
-    
+
 //     // Nom
 //     const nomPlat = document.getElementById("nomPlat");
 //     nomPlat.innerText = plat.nom;
-    
+
 //     // Description
 //     const descriptionPlat = document.getElementById("descriptionPlat");
 //     descriptionPlat.innerText = plat.description;
-    
+
 //     // Prix
 //     const prixPlat = document.getElementById("prixPlat");
 //     prixPlat.innerText = `${plat.prix} €`;
 
-// }      
+// }
 const reponse = await fetch("../axe/js/Plats.json");
-const plats = await reponse.json();     
+const plats = await reponse.json();
 
 function afficherPlats(plats) {
-// Récupérer les plats depuis le fichier JSON
-    const menu= document.getElementById("menu");
+  // Récupérer les plats depuis le fichier JSON
+  const menu = document.getElementById("menu");
 
-    for (const plat of plats) {
-      // Ajouter chaque plat dans la div
-      menu.insertAdjacentHTML("beforeend", `
+  for (const plat of plats) {
+    // Ajouter chaque plat dans la div
+    menu.insertAdjacentHTML(
+      "beforeend",
+      `
         <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
           <img src="${plat.image}" alt="${plat.nom}" class="aspect-2/2  rounded-t-lg">
           <h2 class="text-xl font-bold mt-2">${plat.nom}</h2>
@@ -42,52 +44,71 @@ function afficherPlats(plats) {
           <p class="text-gray-600">${plat.description}</p>
           <p class="text-amber-600 font-bold mt-2">${plat.prix} €</p>
         </div>
-      `);
-    };
-  }   
-  afficherPlats(plats);
+      `
+    );
+  }
+}
+afficherPlats(plats);
 
-     // Filtrage des plats par catégorie
-     
-const btnTout= document.querySelector(".btn-tout");
+// Filtrage des plats par catégorie
+
+const btnTout = document.querySelector(".btn-tout");
 btnTout.addEventListener("click", () => {
   document.getElementById("menu").innerHTML = "";
- afficherPlats(plats);
+  afficherPlats(plats);
 });
 
 const btnEntrees = document.querySelector(".btn-entrees");
 btnEntrees.addEventListener("click", () => {
-  const Entree = plats.filter(plat => plat.type === "Entrées");
+  const Entree = plats.filter((plat) => plat.type === "Entrées");
   document.getElementById("menu").innerHTML = "";
- afficherPlats(Entree);
+  afficherPlats(Entree);
 });
 const btnPlats = document.querySelector(".btn-plats");
 btnPlats.addEventListener("click", () => {
-  const Platss = plats.filter(plat => plat.type === "plat");
+  const Platss = plats.filter((plat) => plat.type === "plat");
   document.getElementById("menu").innerHTML = "";
   afficherPlats(Platss);
 });
 const btnDesserts = document.querySelector(".btn-desserts");
 btnDesserts.addEventListener("click", () => {
-  const Desserts = plats.filter(plat => plat.type === "Desserts");
+  const Desserts = plats.filter((plat) => plat.type === "Desserts");
   document.getElementById("menu").innerHTML = "";
-    afficherPlats(Desserts);
+  afficherPlats(Desserts);
 });
 const btnBoissons = document.querySelector(".btn-boissons");
 btnBoissons.addEventListener("click", () => {
-  const Boissons = plats.filter(plat => plat.type === "Boissons");
+  const Boissons = plats.filter((plat) => plat.type === "Boissons");
   document.getElementById("menu").innerHTML = "";
- afficherPlats(Boissons);
+  afficherPlats(Boissons);
 });
 
 //navigation burger
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
 
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+// Carrousel des témoignages
+const testimonialSwiper = new Swiper(".testimonial-carousel", {
+  loop: true,
+  spaceBetween: 30,
 
+  navigation: {
+    nextEl: ".common-carousel .swiper-button-next",
+    prevEl: ".common-carousel .swiper-button-prev",
+  },
 
-
-
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

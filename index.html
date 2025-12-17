@@ -9,8 +9,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- <link href="/src/output.css" rel="stylesheet"> -->
+    <link href="/src/input.css" rel="stylesheet" />
   </head>
   <body>
     <div
@@ -163,18 +168,17 @@
     </div>
     <section class="max-w-6xl mx-auto px-4 py-10 min-h-screen" id="Menu">
       <div>
-        <h1 class="text-7xl text-center py-6 font-bold">
+        <h1 class="text-3xl text-center py-4 font-bold">
           <span class="text-amber-600">Menu</span>
         </h1>
-        <h2 class="text-xl text-center py-2">
-          <span class="text-black"
-            >Découvrez notre sélection de plats africains emblématiques,
-            cuisinés avec passion et servis avec le sourire.</span
-          >
+        <h2
+          class="mb-3 text-2xl font-bold leading-[1.2] sm:text-4xl md:text-[40px] text-red-950 text-center"
+        >
+          Découvrez notre sélection de plats africains emblématiques.
         </h2>
         <div class="flex max-sm:grid grid-cols-3">
           <button
-            class="btn-tout basis-sm bg-amber-600 text-white hover:bg-fuchsia-500 rounded-3xl p-3 m-1 col-span-2"
+            class="btn-tout basis-sm bg-amber-600 text-white hover:bg-transparent rounded-3xl p-3 m-1 col-span-2"
           >
             Voir Tout
           </button>
@@ -207,6 +211,296 @@
         </div>
       </div>
     </section>
+    <!-- ====== Testimonial Section Start -->
+    <section
+      class="overflow-hidden md:py-[120px] max-w-6xl mx-auto px-4 py-10 min-h-screen"
+      id="testimonials"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap justify-center -mx-4">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+              <span class="block mb-2 text-lg font-semibold text-primary">
+                Témoignages clients
+              </span>
+              <h2
+                class="mb-3 text-3xl font-bold leading-[1.2] sm:text-4xl md:text-[40px] text-red-950"
+              >
+                Ce que disent nos clients
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="-m-5">
+          <div class="p-5 swiper testimonial-carousel common-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+                >
+                  <div class="mb-[18px] flex items-center gap-[2px]">
+                    <div class="text-amber-400">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                    “Une expérience incroyable ! Les plats sont savoureux, bien
+                    épicés et très bien présentés. On sent vraiment l’âme de la
+                    cuisine africaine. Je reviendrai sans hésiter.’’
+                  </p>
+
+                  <a href="#" class="flex items-center gap-4">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                      <img
+                        src="src/img/chef.jpeg"
+                        alt="author"
+                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                      />
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-dark">Fatou</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+                >
+                  <div class="mb-[18px] flex items-center gap-[2px]">
+                    <div class="text-amber-400">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                    “Accueil chaleureux, ambiance conviviale et nourriture
+                    excellente. Le poulet yassa était juste parfait. Amina est
+                    devenu mon restaurant préféré.’’
+                  </p>
+
+                  <a href="#" class="flex items-center gap-4">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                      <img
+                        src="src/img/chef.jpeg"
+                        alt="author"
+                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                      />
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-dark">
+                        Sidi Mansour
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+                >
+                  <div class="mb-[18px] flex items-center gap-[2px]">
+                    <div class="text-amber-400">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                    “Les saveurs m’ont rappelé la cuisine de ma mère. Tout était
+                    délicieux, du bissap aux desserts. Un vrai voyage
+                    culinaire.’’
+                  </p>
+
+                  <a href="#" class="flex items-center gap-4">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                      <img
+                        src="src/img/chef.jpeg"
+                        alt="author"
+                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                      />
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-dark">
+                        Abass Hamidou
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+                >
+                  <div class="mb-[18px] flex items-center gap-[2px]">
+                    <div class="text-amber-400">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                    “Très belle découverte ! Le cadre est élégant et moderne, et
+                    les plats sont généreux et authentiques. Mention spéciale
+                    pour le riz jollof.’’
+                  </p>
+
+                  <a href="#" class="flex items-center gap-4">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                      <img
+                        src="src/img/chef.jpeg"
+                        alt="author"
+                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                      />
+                    </div>
+
+                    <div>
+                      <h3 class="text-sm font-semibold text-dark">
+                        Abdoul Karim
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+                >
+                  <div class="mb-[18px] flex items-center gap-[2px]">
+                    <div class="text-amber-400">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                    “J’ai adoré l’ambiance et la gentillesse du personnel. On se
+                    sent comme à la maison. Le mafé était excellent, bien
+                    équilibré et fondant.’’
+                  </p>
+
+                  <a href="#" class="flex items-center gap-4">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                      <img
+                        src="src/img/chef.jpeg"
+                        alt="author"
+                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                      />
+                    </div>
+
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-dark dark:text-white"
+                      >
+                        Aïcha
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+                >
+                  <div class="mb-[18px] flex items-center gap-[2px]">
+                    <div class="text-amber-400">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                    “Un restaurant africain comme on en voit rarement. Qualité,
+                    goût et service au top. Je recommande Amina à 100 %.’’
+                  </p>
+
+                  <a href="#" class="flex items-center gap-4">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                      <img
+                        src="src/img/chef.jpeg"
+                        alt="author"
+                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                      />
+                    </div>
+
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-dark dark:text-white"
+                      >
+                        Taoufik
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <div class="swiper-button-prev">
+                <svg
+                  class="fill-current"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.25 10.2437H4.57187L10.4156 4.29687C10.725 3.9875 10.725 3.50625 10.4156 3.19687C10.1062 2.8875 9.625 2.8875 9.31562 3.19687L2.2 10.4156C1.89062 10.725 1.89062 11.2063 2.2 11.5156L9.31562 18.7344C9.45312 18.8719 9.65937 18.975 9.86562 18.975C10.0719 18.975 10.2437 18.9062 10.4156 18.7687C10.725 18.4594 10.725 17.9781 10.4156 17.6688L4.60625 11.7906H19.25C19.6625 11.7906 20.0063 11.4469 20.0063 11.0344C20.0063 10.5875 19.6625 10.2437 19.25 10.2437Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="swiper-button-next">
+                <svg
+                  class="fill-current"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.8 10.45L12.6844 3.2313C12.375 2.92192 11.8938 2.92192 11.5844 3.2313C11.275 3.54067 11.275 4.02192 11.5844 4.3313L17.3594 10.2094H2.75C2.3375 10.2094 1.99375 10.5532 1.99375 10.9657C1.99375 11.3782 2.3375 11.7563 2.75 11.7563H17.4281L11.5844 17.7032C11.275 18.0126 11.275 18.4938 11.5844 18.8032C11.7219 18.9407 11.9281 19.0094 12.1344 19.0094C12.3406 19.0094 12.5469 18.9407 12.6844 18.7688L19.8 11.55C20.1094 11.2407 20.1094 10.7594 19.8 10.45Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Testimonial Section End -->
     <section class="max-w-6xl mx-auto px-4 py-10 min-h-screen" id="apropos">
       <div
         class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-sm:gap-5"
@@ -241,50 +535,55 @@
       </div>
     </section>
     <section class="max-w-6xl mx-auto px-4 py-10 min-h-screen" id="galerie">
-      <h1 class="text-3xl text-center py-6">
+      <h1 class="text-3xl text-center py-4 font-bold">
         <span class="text-amber-600">Gallery</span>
       </h1>
+      <h2
+        class="mb-3 text-2xl font-bold leading-[1.2] sm:text-4xl md:text-[40px] text-red-950 text-center"
+      >
+        Découvrez en images l’univers du restaurant Amina.
+      </h2>
       <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-2">
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-white rounded-lg shadow-lg inset-shadow-sm">
           <img
-            src="src/img/meal1.png"
+            src="src/img/Gallerie/img1.jfif"
             alt="Gallery Image 1"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-white rounded-lg shadow-lg inset-shadow-sm">
           <img
-            src="src/img/meal2.png"
+            src="src/img/Gallerie/img2.jfif"
             alt="Gallery Image 2"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-white rounded-lg shadow-lg inset-shadow-sm">
           <img
-            src="src/img/meal3.png"
+            src="src/img/Gallerie/img3.jfif"
             alt="Gallery Image 3"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-white rounded-lg shadow-lg inset-shadow-sm">
           <img
-            src="src/img/meal4.png"
+            src="src/img/Gallerie/img4.jfif"
             alt="Gallery Image 4"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-white rounded-lg shadow-lg inset-shadow-sm">
           <img
-            src="src/img/meal5.png"
+            src="src/img/Gallerie/img5.jfif"
             alt="Gallery Image 5"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div class="bg-white rounded-lg shadow-lg p-4 inset-shadow-sm">
+        <div class="bg-white rounded-lg shadow-lg inset-shadow-sm">
           <img
-            src="src/img/meal6.png"
+            src="src/img/Gallerie/img1.jfif"
             alt="Gallery Image 6"
-            class="w-full h-48 object-cover rounded-t-lg"
+            class="w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>
@@ -293,52 +592,54 @@
       <h1 class="text-3xl text-center py-6">
         <span class="text-amber-600">Nous-</span>Contactez
       </h1>
-      <div
-        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-sm:gap-5"
+      <h2
+        class="mb-3 text-2xl font-bold leading-[1.2] sm:text-4xl md:text-[40px] text-red-950 text-center"
       >
-        <div>
-          <form class="bg-white p-6 rounded-lg shadow-lg inset-shadow-sm">
-            <div class="mb-4">
-              <label for="name" class="block text-gray-700 font-bold mb-2"
-                >Nom:</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
-                placeholder="Votre nom"
-              />
-            </div>
-            <div class="mb-4">
-              <label for="email" class="block text-gray-700 font-bold mb-2"
-                >Email:</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
-                placeholder="Votre email"
-              />
-            </div>
-            <div class="mb-4">
-              <label for="message" class="block text-gray-700 font-bold mb-2"
-                >Message:</label
-              >
-              <textarea
-                id="message"
-                rows="4"
-                class="resize-none w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
-                placeholder="Votre message"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="bg-amber-600 text-white px-6 py-3 rounded-full border-2 border-amber-600 hover:bg-transparent transition duration-300 hover:text-amber-600"
+        Réservez votre table dès maintenant
+      </h2>
+      <div
+        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-sm:gap-5 bg-amber-50 p-6"
+      >
+        <div class="space-y-10">
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-red-950 text-red-100"
             >
-              Envoyer
-            </button>
-          </form>
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <p class="text-lg font-semibold text-red-950">Téléphone</p>
+              <p class="text-gray-900">+212 123 456 789</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-red-950 text-red-100"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-lg font-semibold text-red-950">Email</p>
+              <p class="text-gray-900">contact@aminarestaurant.ma</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-red-950 text-red-100"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-lg font-semibold text-red-950">Localisation</p>
+              <p class="text-gray-900">
+                Boulevard Zerktouni, Casablanca, Maroc
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="flex justify-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6564.180555601601!2d-1.8851558755364894!3d34.65242293776824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1765590697905!5m2!1sfr!2sma"
@@ -370,4 +671,3 @@
     <script type="module" src="axe/js/script.js"></script>
   </body>
 </html>
-relative
